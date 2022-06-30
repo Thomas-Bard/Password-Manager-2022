@@ -1,0 +1,128 @@
+/*Import roboto font*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+/*Set font family to Roboto*/
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d1d1d;
+    color:white;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeInAnimation 0.5s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+#web_name {
+    display: inline;
+}
+
+#main_title {
+    text-align: center;
+}
+
+#icon {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Center everything inside the form with id data_form*/
+#data_form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+/*Surround with a round edge box*/
+#data_form {
+    border-radius: 10px;
+    border: 2px solid #16181b;
+    background-color: #16181b;
+    padding: 20px;
+    box-shadow: #0b0c0e 0px 0px 10px;
+}
+
+/*Set the width of the form*/
+#data_form {
+    width: 50%;
+}
+
+/*Center the content inside the form*/
+#data_form_content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set the width of the content*/
+#data_form_content {
+    width: 50%;
+    text-align: center;
+}
+
+/*Set the height of the form*/
+#data_form {
+    height: auto;
+}
+
+/*Display elements from top to bottom in the form*/
+#data_form_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Set the width of the inputs*/
+#data_form_content_inputs input {
+    width: 100%;
+    background-color: #16181b;
+    border: none;
+    transition-duration: 100ms;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: #0b0c0e 0px 0px 10px;
+
+}
+/*Set the color of the inputs*/
+#data_form_content_inputs input:focus {
+    color: white;
+}
+
+/*Set the width of the submit button*/
+#data_form_content #submit {
+    width: 100%;
+    background-color: #0085dd;
+    border: none;
+    transition: background-color 1s ease-in-out;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: #0b0c0e 0px 0px 10px;
+    cursor: pointer;
+    outline: none;
+}
+/*Set the color of the submit button*/
+#data_form_content #submit:hover {
+    background-color: #12a0ff;
+    
+}
+/*Create dripping effect*/
+#data_form_content #submit:active {
+    transform: translateY(2px);
+}

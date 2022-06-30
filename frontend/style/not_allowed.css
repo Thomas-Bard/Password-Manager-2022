@@ -1,0 +1,45 @@
+/*Center title with id title and set roboto font in white*/
+/*Get Roboto font*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+/*Set font family to Roboto*/
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#title, #web_name {
+    text-align: center;
+    color: white;
+}
+
+#web_name {
+    display: inline;
+}
+
+#main_title {
+    text-align: center;
+}
+
+#title {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #16181b;
+    box-shadow: #0b0c0e 0px 0px 10px;
+}
+
+
+/*Set background color to dark theme colors*/
+body {
+    background-color: #1d1d1d;
+}
+
+/*Center image with id robot_image*/
+#robot_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#icon {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}

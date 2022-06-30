@@ -1,0 +1,105 @@
+/*Import roboto font*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+/*Set font family to Roboto*/
+
+
+
+
+
+
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d1d1d;
+    color:white;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#web_name {
+    display: inline;
+}
+
+#main_title {
+    text-align: center;
+}
+
+#icon {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set the border of the a tag*/
+a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+/*Center the a tag inside the body*/
+a {
+    text-align: center;
+    position: relative;
+}
+#button_container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #181818;
+    width:50%;
+    height: fit-content;
+}
+
+/*Center the a tags inside the button container*/
+#button_container #register_container, #login_container {
+    text-align: center;
+    box-shadow: #16181b 0px 0px 10px;
+    position: relative;
+    padding: 50px;
+}
+#login {
+    background-color: #005ae0;
+    border: 1px solid #005ae0;
+    box-shadow: #16181b 0px 0px 10px;
+    border-radius: 10px;
+}
+#register {
+    background-color: #00e025;
+    border: 1px solid #00e025;
+    border-radius: 10px;
+    box-shadow: #16181b 0px 0px 10px;
+}
+#register, #login {
+    transition: background-color 0.5s ease;
+}
+#login:hover {
+    background-color: #2970da;
+    border: 1px solid #2970da;
+    box-shadow: #16181b 0px 0px 10px;
+    border-radius: 10px;
+}
+#register:hover {
+    background-color: #40e45b;
+    border: 1px solid #40e45b;
+    border-radius: 10px;
+    box-shadow: #16181b 0px 0px 10px;
+}
+#button_container {
+    margin-top: 10px;
+    border-radius: 10px;
+}

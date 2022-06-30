@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/login_register.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Se connecter</title>
+    </head>
+    <body>
+        <div id = "main_title">
+            <img src="images/icon32x32.png">
+            <h2 id ="web_name">Password Manager 2022</h2>
+        </div>
+        <form id="data_form" action="dashboard" autocomplete="off" method="post">
+            <div id="data_form_content">
+                <h1 id="title">Se connecter</h1>
+                <div id="data_form_content_inputs">
+                    <input id="username" name="login" type="text" placeholder="Nom d'utilisateur" required>
+                    <input id="password" name="password" type="password" placeholder="Mot de passe" required>
+                </div>
+                <input class = "ripple" id="submit" type="submit" value="Se connecter">
+            </div>
+        </form>
+    </body>
+</html>
