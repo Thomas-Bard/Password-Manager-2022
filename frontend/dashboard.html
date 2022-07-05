@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/dashboard.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script src="js/socket.io.js"></script>
+        <script src="js/dashboard.js"></script>
+        <title>Tableau de bord</title>
+    </head>
+    <body>
+        <div id="main_title">
+            <img src="images/icon32x32.png">
+            <h2 id="web_name">Password Manager 2022</h2>
+        </div>
+        <br>
+        <div id="modal_add_password" class="modal">
+            <div id ="modal_add_password_body" class = "modal_body">
+                <div id="modal_add_password_title">
+                    <h1 class="modal_title">Ajouter un mot de passe</h1>
+                </div>
+                <br>
+                <div id="modal_add_password_content">
+                    <input id="add_password_name" placeholder="Service"/>
+                    <div class="modal_separator"></div>
+                    <input id="add_password_login" placeholder="Identifiant"/>
+                    <div class="modal_separator"></div>
+                    <input id="add_password_password" placeholder="Mot de passe"/>
+                    <div class="modal_separator"></div>
+                    <button id="add_password_confirm">Ajouter</button>
+                </div>
+            </div>
+        </div>
+        <div id="passwords_containers">
+            <div id="passwords_title" class="row">
+                <h1 id="your_passwords">Vos mots de passe</h1>
+            </div>
+            <div id="password_append" class="row">
+                <div id="add_password_container">
+                    <button id="add_password">+</button>
+                </div>
+            </div>
+            <br/>
+            <div id="passwords_content">
+                <div class="passwords_descriptor row">
+                    <div class="password_descriptor_content" id="password_name">Service</div>
+                    <div class="password_descriptor_content" id="password_login">Identifiant</div>
+                    <div class="password_descriptor_content" id="password_password">Mot de passe</div>
+                </div>
+                <div id="passwords_list">
+                    <!--<div class="password_container row" id="password_0">
+                        <div class="password_content" id="password_name">Service</div>
+                        <div class="password_content" id="password_login">Identifiant</div>
+                        <div class="password_content" id="password_password">Mot de passe</div>
+                        <div class="password_content">
+                            <button class="password_button_delete password_button" id="password_delete_0">X</button>
+                            <button class="password_button_clipboard password_button" id="password_clipboard_0">C</button>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
